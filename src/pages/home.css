@@ -1,0 +1,68 @@
+.container {
+    position: relative;
+    transition: 0.5s;
+}
+
+.container.open {
+    margin-left: 250px;
+}
+
+.container.hide {
+    margin-left: 0px;
+}
+
+.side-bar {
+    position: absolute;
+    z-index: 97888;
+    color: white;
+    background-color: #eee;
+    width: 0px;
+    height: 100vw;
+    overflow-x: hidden;
+    top: -8px;
+    left: 0;
+}
+
+.side-bar.open {
+    left: -250px;
+    width: 250px;
+}
+.side-bar.hide {
+    left: 0px;
+    width: 0px;
+    transition: 0.5s;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    height: 60px;
+    background: #eee;
+    width: 100%;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+    background: #eee;
+    width: 100%;
+}
+
+.content {
+    padding: 60px 0;
+    margin: 0 auto;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    height: inherit;
+}
+
+.toggle-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
